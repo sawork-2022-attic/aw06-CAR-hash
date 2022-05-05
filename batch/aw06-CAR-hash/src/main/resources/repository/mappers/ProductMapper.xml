@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.batch.mapper.ProductMapper">
+    <select id="insertProduct">
+        INSERT INTO Products VALUES (#{asin},#{main_cat},#{title},#{price},#{category},#{imageURL});
+    </select>
+    <select id="insertProductCategory">
+        INSERT INTO ProductCategory VALUES (#{asin},#{title},#{category});
+    </select>
+    <select id="insertProductImageURL">
+        INSERT INTO ProductImageURL VALUES (#{asin},#{title},#{imageURL});
+    </select>
+</mapper>

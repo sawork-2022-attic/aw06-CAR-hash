@@ -1,0 +1,12 @@
+DROP TABLE  IF EXISTS Products;
+DROP TABLE  IF EXISTS ProductCategory;
+DROP TABLE  IF EXISTS  ProductImageURL;
+
+CREATE TABLE IF NOT EXISTS Products(
+    asin VARCHAR(100) NOT NULL,
+    main_cat VARCHAR(1000),
+    title VARCHAR(1000) NOT NULL,
+    price VARCHAR(10000),
+    category VARCHAR(1000),
+    imageURL VARCHAR(1000)
+);
